@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %} AuthyHome {% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+    Hello {{ user.username }}
+{% else %}
+    <h4>Kindly note that you are not logged in</h4>
+    <a href="{% url 'login' %}">LogIn</a>
+{% endif %}
+{% endblock %}
