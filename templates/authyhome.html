@@ -4,8 +4,9 @@
 {% block content %}
 {% if user.is_authenticated %}
     Hello {{ user.username }}
+    <p><a href="{% url 'logout' %}">Logout</a></p>
 {% else %}
     <h4>Kindly note that you are not logged in</h4>
-    <a href="{% url 'login' %}">LogIn</a>
+    <a href="{% url 'login' %}">Login</a>
 {% endif %}
 {% endblock %}
