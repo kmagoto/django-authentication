@@ -1,0 +1,24 @@
+body{
+    background: cadetblue;
+}
+
+
+.formStyle{
+    width: 500px;
+    height: 500px;
+    color: gold;
+    background-color: midnightblue;
+}
+
+input{
+    width: 180px;
+    height: 30px;
+    border-radius: 12px;
+}
+button{
+    background-color: coral;
+    color: black;
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+}
